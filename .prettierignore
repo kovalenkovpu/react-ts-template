@@ -1,0 +1,8 @@
+dist
+node_modules
+src/public
+src/styles/pearsonbase
+coverage
+submodules/
+index.html
+.vscode

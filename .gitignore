@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.idea/
+.DS_Store
+yarn-error.log
+.\#*
+report.*.json
+coverage
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+.yarn_cache
+.yarn
