@@ -3,7 +3,6 @@ import path from 'path';
 import CopyPlugin from 'copy-webpack-plugin';
 import ESLintPlugin from 'eslint-webpack-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
-import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import StylelintPlugin from 'stylelint-webpack-plugin';
 import webpack from 'webpack';
 
@@ -14,7 +13,6 @@ const plugins = [
   new HtmlWebpackPlugin({
     template: path.resolve(path.join('.', 'public', 'index.html')),
   }),
-  new MiniCssExtractPlugin(),
   new CopyPlugin({
     patterns: [
       {
