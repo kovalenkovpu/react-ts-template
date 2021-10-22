@@ -1,7 +1,7 @@
-const resolveLoaders = {
+const resolveLoader = {
   resolveLoader: {
     modules: ['node_modules'],
   },
 };
 
-export default resolveLoaders;
+export { resolveLoader };

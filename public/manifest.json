@@ -1,6 +1,6 @@
 {
-  "name": "Pearson",
-  "short_name": "pearson.com",
+  "name": "<YOUR_ORG_NAME>",
+  "short_name": "<YOUR_ORG_SHORTNAME>",
   "icons": [
     {
       "src": "favicon.ico",

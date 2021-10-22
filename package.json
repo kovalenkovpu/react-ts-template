@@ -4,8 +4,8 @@
   "description": "Template repository for ReactJS-TS-Webpack",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack serve --config ./configs/webpack/development.config.ts",
-    "build": "rm -rf ./dist/* && webpack --config ./configs/webpack/production.config.ts",
+    "start": "webpack serve --config ./configs/webpack/development.config.ts",
+    "build": "webpack --config ./configs/webpack/production.config.ts",
     "test": "jest --watchAll --detectOpenHandles",
     "test:precommit": "jest --forceExit",
     "test:coverage": "jest --coverage",
@@ -21,13 +21,6 @@
     "type": "git",
     "url": "git+https://github.com/kovalenkovpu/react-ts-template.git"
   },
-  "keywords": [
-    "reactjs",
-    "typescript",
-    "webpack",
-    "jest",
-    "rtl"
-  ],
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -41,13 +34,14 @@
     "@testing-library/user-event": "^13.2.1",
     "@types/copy-webpack-plugin": "^8.0.1",
     "@types/jest": "^27.0.1",
+    "@types/mini-css-extract-plugin": "^2.4.0",
     "@types/react": "^17.0.19",
     "@types/react-dom": "^17.0.9",
+    "@types/react-router-dom": "^5.1.9",
     "@types/webpack": "^5.28.0",
     "@types/webpack-dev-server": "^4.0.3",
     "@typescript-eslint/eslint-plugin": "^4.30.0",
     "@typescript-eslint/parser": "^4.30.0",
-    "clean-webpack-plugin": "^4.0.0-alpha.0",
     "copy-webpack-plugin": "^9.0.1",
     "css-loader": "^6.2.0",
     "eslint": "^7.32.0",
@@ -63,6 +57,7 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.1.0",
     "jest-watch-typeahead": "^0.6.4",
+    "mini-css-extract-plugin": "^2.4.3",
     "prettier": "^2.3.2",
     "sass": "^1.38.2",
     "sass-loader": "^12.1.0",

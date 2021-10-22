@@ -1,3 +1,7 @@
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+
+import { isDevMode } from './utils';
+
 const rules = {
   module: {
     rules: [
@@ -21,9 +25,7 @@ const rules = {
       {
         test: /\.s[ac]ss$/i,
         use: [
-          {
-            loader: 'style-loader',
-          },
+          MiniCssExtractPlugin.loader,
           {
             loader: 'css-loader',
             options: {
@@ -31,17 +33,17 @@ const rules = {
               modules: {
                 mode: 'local',
                 auto: true,
-                localIdentName: '[name]__[local]--[hash:base64:5]',
+                localIdentName: isDevMode
+                  ? '[name]__[local]--[hash:base64:5]'
+                  : '[hash:base64]',
               },
             },
           },
-          {
-            loader: 'sass-loader',
-          },
+          'sass-loader',
         ],
       },
     ],
   },
 };
 
-export default rules;
+export { rules };

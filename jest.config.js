@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: 'fin-aid',
+  displayName: '<YOUR_PROJECT_NAME_HERE>',
   testEnvironment: 'jsdom',
   collectCoverageFrom: [
     '**/*.{ts,tsx}',
@@ -12,7 +12,7 @@ module.exports = {
   moduleNameMapper: {
     '^src(.*)$': '<rootDir>/src$1',
     '^mocks/(.*)$': '<rootDir>/mocks/$1',
-    '\\.less$': 'identity-obj-proxy',
+    '\\.s[ac]ss$': 'identity-obj-proxy',
     '\\.(jpg|jpeg|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
       '<rootDir>/src/__mocks__/file-mock.ts',
   },

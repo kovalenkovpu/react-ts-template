@@ -9,4 +9,4 @@ const resolve = {
   },
 };
 
-export default resolve;
+export { resolve };
