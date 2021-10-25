@@ -6,7 +6,7 @@ enum BUTTON_TYPES {
 }
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  btnType: BUTTON_TYPES;
+  btnType?: BUTTON_TYPES;
 }
 
 export { BUTTON_TYPES };

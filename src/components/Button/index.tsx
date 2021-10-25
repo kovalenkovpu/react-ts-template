@@ -1,9 +1,13 @@
 import * as React from 'react';
 
 import { StyledButton } from './Button.styles';
-import { ButtonProps } from './Button.types';
+import { BUTTON_TYPES, ButtonProps } from './Button.types';
 
-const Button: React.FC<ButtonProps> = ({ btnType, children, ...rest }) => {
+const Button: React.FC<ButtonProps> = ({
+  btnType = BUTTON_TYPES.PRIMARY,
+  children,
+  ...rest
+}) => {
   return (
     <StyledButton btnType={btnType} {...rest}>
       {children}
