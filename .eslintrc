@@ -3,6 +3,7 @@
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:import/recommended",
+    "plugin:react/jsx-runtime",
     "plugin:prettier/recommended"
   ],
   "plugins": ["prettier", "react"],

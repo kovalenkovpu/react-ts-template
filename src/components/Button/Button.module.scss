@@ -1,0 +1,13 @@
+.button {
+  padding: 1rem;
+  margin: 2px;
+  border-width: 1px;
+
+  &.primary {
+    background-color: #8a8af5;
+  }
+
+  &.error {
+    background-color: #e97b7a;
+  }
+}

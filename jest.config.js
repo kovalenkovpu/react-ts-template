@@ -6,8 +6,9 @@ module.exports = {
     '!**/*.stories.tsx',
     '!*.{ts,tsx}',
     '!src/*.{ts,tsx}',
-    '!src/__mocks__/*',
-    '!src/mocks/*',
+    '!src/__mocks__/**/*',
+    '!src/mocks/**/*',
+    '!./configs/**/*',
   ],
   moduleNameMapper: {
     '^src(.*)$': '<rootDir>/src$1',
