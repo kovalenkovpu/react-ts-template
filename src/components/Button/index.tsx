@@ -1,17 +1,15 @@
 import * as React from 'react';
 
-import { StyledButton } from './Button.styles';
+import { getButtonStyles } from './Button.styles';
 import { BUTTON_TYPES, ButtonProps } from './Button.types';
 
-const Button: React.FC<ButtonProps> = ({
-  btnType = BUTTON_TYPES.PRIMARY,
-  children,
-  ...rest
-}) => {
+const Button: React.FC<ButtonProps> = props => {
+  const { btnType = BUTTON_TYPES.PRIMARY, children, ...rest } = props;
+
   return (
-    <StyledButton btnType={btnType} {...rest}>
+    <button {...rest} css={getButtonStyles(props)}>
       {children}
-    </StyledButton>
+    </button>
   );
 };
 

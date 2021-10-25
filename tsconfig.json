@@ -25,7 +25,8 @@
     "target": "ES5",
     "noEmitOnError": true,
     "sourceMap": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "jsxImportSource": "@emotion/react"
   },
   "exclude": ["node_modules"]
 }
