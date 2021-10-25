@@ -4,8 +4,8 @@
   "description": "Template repository for ReactJS-TS-Webpack",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve --config ./configs/webpack/development.config.ts",
-    "build": "webpack --config ./configs/webpack/production.config.ts",
+    "start": "cross-env NODE_ENV=development webpack serve --config ./configs/webpack/development.config.ts",
+    "build": "cross-env NODE_ENV=production webpack --config ./configs/webpack/production.config.ts",
     "test": "jest --watchAll --detectOpenHandles",
     "test:precommit": "jest --forceExit --passWithNoTests",
     "test:coverage": "jest --coverage",
@@ -46,6 +46,7 @@
     "@typescript-eslint/eslint-plugin": "^4.30.0",
     "@typescript-eslint/parser": "^4.30.0",
     "copy-webpack-plugin": "^9.0.1",
+    "cross-env": "^7.0.3",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-import-resolver-typescript": "^2.4.0",
