@@ -7,7 +7,7 @@
     "start": "webpack serve --config ./configs/webpack/development.config.ts",
     "build": "webpack --config ./configs/webpack/production.config.ts",
     "test": "jest --watchAll --detectOpenHandles",
-    "test:precommit": "jest --forceExit",
+    "test:precommit": "jest --forceExit --passWithNoTests",
     "test:coverage": "jest --coverage",
     "tslint": "tsc --noEmit",
     "eslint": "eslint .",
@@ -15,7 +15,8 @@
     "prettier:check": "prettier . --check",
     "prettier:fix": "prettier . --write",
     "lint:all": "npm run tslint && npm run eslint && npm run stylelint && npm run prettier:check",
-    "pre-commit": "npm run lint:all && npm run test:precommit"
+    "pre-commit": "npm run lint:all && npm run test:precommit",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -54,7 +55,7 @@
     "eslint-plugin-react": "^7.25.1",
     "eslint-plugin-react-hooks": "^4.2.0",
     "html-webpack-plugin": "^5.3.2",
-    "husky": "^7.0.2",
+    "husky": "^7.0.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^27.1.0",
     "jest-watch-typeahead": "^0.6.4",
@@ -74,11 +75,6 @@
     "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^4.0.0",
     "webpack-merge": "^5.8.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run pre-commit"
-    }
   },
   "author": "Pavel Kovalenkov",
   "license": "ISC",
