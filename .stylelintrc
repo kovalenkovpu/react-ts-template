@@ -1,12 +1,16 @@
 {
-  "processors": [
-    "stylelint-processor-styled-components"
-  ],
+  "processors": [],
   "extends": [
-    "stylelint-prettier/recommended",
-    "stylelint-config-styled-components"
+    "stylelint-config-recommended",
+    "stylelint-config-styled-components",
+    "stylelint-prettier/recommended"
   ],
   "plugins": [
     "stylelint-prettier"
-  ]
+  ],
+  "customSyntax": "@stylelint/postcss-css-in-js",
+  "rules": {
+    "property-no-unknown": true,
+    "no-duplicate-selectors": true
+  }
 }

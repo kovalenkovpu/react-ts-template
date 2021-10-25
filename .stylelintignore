@@ -1,6 +1,4 @@
 src/public
-src/styles/pearsonbase
 node_modules/
 dist
 coverage
-submodules/
