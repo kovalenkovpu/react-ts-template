@@ -23,6 +23,11 @@
     "url": ""
   },
   "dependencies": {
+    "@pearson-ux/pearson-web-components": "^8.0.9",
+    "@pearson-ux/pso-design": "^0.1.0",
+    "@webcomponents/custom-elements": "^1.5.0",
+    "moment": "^2.29.1",
+    "moment-range": "^4.0.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.2.1",
@@ -47,6 +52,7 @@
     "@typescript-eslint/parser": "^4.30.0",
     "copy-webpack-plugin": "^9.0.1",
     "cross-env": "^7.0.3",
+    "css-loader": "^6.5.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-import-resolver-typescript": "^2.4.0",
@@ -60,6 +66,7 @@
     "jest": "^27.1.0",
     "jest-watch-typeahead": "^0.6.4",
     "prettier": "^2.3.2",
+    "style-loader": "^3.3.1",
     "stylelint": "^14.0.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-recommended": "^6.0.0",

@@ -11,6 +11,10 @@ const rules = {
         type: 'asset/resource',
       },
       {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
         test: /\.(woff|woff2|eot|ttf)$/,
         use: ['url-loader?limit=100000'],
       },

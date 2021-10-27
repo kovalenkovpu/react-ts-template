@@ -18,3 +18,15 @@ declare module '*.svg' {
   const content: string;
   export default content;
 }
+
+declare namespace JSX {
+  type WebComponent = Record<string, unknown>;
+  interface IntrinsicElements {
+    'pearson-header': WebComponent;
+    'pearson-button-toggle': WebComponent;
+    'pearson-accordion': WebComponent;
+    'pearson-datepicker': WebComponent;
+    'pearson-pagination': WebComponent;
+    'pearson-footer': WebComponent;
+  }
+}
