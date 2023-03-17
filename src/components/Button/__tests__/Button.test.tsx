@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
 import { Button } from '..';
@@ -11,17 +11,15 @@ describe('Button component', () => {
     expect(asFragment()).toMatchSnapshot();
   });
 
-  test('should call onClick when clicked', () => {
+  test('should call onClick when clicked', async () => {
     const onButtonClick = jest.fn();
 
     render(<Button onClick={onButtonClick}>Click me</Button>);
 
-    const button = screen.getByRole('button', {
-      name: /click me/i,
-    });
+    const button = screen.getByRole('button');
 
     userEvent.click(button);
 
-    expect(onButtonClick).toBeCalledTimes(1);
+    await waitFor(() => expect(onButtonClick).toBeCalledTimes(1));
   });
 });

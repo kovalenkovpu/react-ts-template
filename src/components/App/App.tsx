@@ -1,8 +1,6 @@
-import * as React from 'react';
-
+import classes from './App.module.scss';
 import { Button } from '../Button';
 import { BUTTON_TYPES } from '../Button/Button.types';
-import classes from './App.module.scss';
 
 const App: React.FC = () => {
   return (

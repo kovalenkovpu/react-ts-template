@@ -1,5 +1,3 @@
-import * as React from 'react';
-
 import classes from './Button.module.scss';
 import { BUTTON_TYPES, ButtonProps } from './Button.types';
 

@@ -1,5 +1,3 @@
-import * as React from 'react';
-
 enum BUTTON_TYPES {
   PRIMARY = 'primary',
   ERROR = 'error',

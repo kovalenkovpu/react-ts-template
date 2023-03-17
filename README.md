@@ -8,12 +8,18 @@ npm i react react-dom react-router-dom -S
 
 ## Dev dependencies
 
+### Cross-env for arch-agnostic scripts run
+
+```javascript
+npm i cross-env -D
+```
+
 ### Config
 
 Dev dependencies which are required for the webpack setup to run:
 
 ```javascript
-npm i typescript webpack webpack-cli webpack-dev-server webpack-merge ts-loader ts-node ts-jest html-webpack-plugin clean-webpack-plugin copy-webpack-plugin sass sass-loader css-loader style-loader -D
+npm i typescript webpack webpack-cli webpack-dev-server webpack-merge ts-loader ts-node ts-jest html-webpack-plugin clean-webpack-plugin copy-webpack-plugin mini-css-extract-plugin sass sass-loader css-loader style-loader -D
 ```
 
 ### Config types
@@ -21,7 +27,7 @@ npm i typescript webpack webpack-cli webpack-dev-server webpack-merge ts-loader 
 Webpack setup dependencies types:
 
 ```javascript
-npm i @types/webpack @types/webpack-dev-server @types/copy-webpack-plugin -D
+npm i @types/webpack -D
 ```
 
 ### Testing dependencies
@@ -29,7 +35,7 @@ npm i @types/webpack @types/webpack-dev-server @types/copy-webpack-plugin -D
 Jest, jest cli handy tests filtering, mocking imports:
 
 ```javascript
-npm i jest jest-watch-typeahead identity-obj-proxy -D
+npm i jest jest-watch-typeahead identity-obj-proxy jest-environment-jsdom -D
 ```
 
 ### Core types
@@ -43,7 +49,7 @@ npm i @types/react @types/react-dom -D
 Additional testing types (RTL, RTL-Jest, Hooks, User event):
 
 ```javascript
-npm i @types/jest @testing-library/dom @testing-library/jest-dom @testing-library/react @testing-library/react-hooks @testing-library/user-event -D
+npm i @types/jest @testing-library/dom @testing-library/jest-dom @testing-library/react @testing-library/user-event -D
 ```
 
 ### Linters
@@ -57,7 +63,7 @@ npm i eslint eslint-import-resolver-typescript eslint-plugin-import eslint-plugi
 Code linting (CSS prettier powered):
 
 ```javascript
-npm i stylelint stylelint-config-css-modules stylelint-config-prettier stylelint-prettier stylelint-webpack-plugin -D
+npm i stylelint stylelint-config-css-modules stylelint-prettier stylelint-webpack-plugin -D
 ```
 
 ### Linters types
