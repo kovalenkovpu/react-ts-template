@@ -1,7 +1,7 @@
 {
-  "name": "cue-card-client",
+  "name": "react-ts-template",
   "version": "1.0.0",
-  "description": "Cue-card",
+  "description": "Template repository for ReactJS-TS-Webpack",
   "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve --config ./configs/webpack/development.config.ts",
@@ -80,7 +80,7 @@
       "pre-commit": "npm run pre-commit"
     }
   },
-  "author": "kovalenkovpu",
-  "license": "MIT",
+  "author": "<YOUR_NAME_HERE>",
+  "license": "ISC",
   "homepage": ""
 }
